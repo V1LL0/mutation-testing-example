@@ -4,5 +4,6 @@ export const isNonNegative = (a) => {
 }
 
 export const max = (a, b) => {
+    // Stryker disable next-line EqualityOperator: disabled because it results in equivalent mutant
     return a < b ? b : a;
 }
