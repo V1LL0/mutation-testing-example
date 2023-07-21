@@ -1,0 +1,25 @@
+{
+  "name": "mutation-testing",
+  "author": "V1LL0",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "lint:format": "prettier --check --ignore-path .gitignore .",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:mutation": "stryker run"
+  },
+  "devDependencies": {
+    "@stryker-mutator/core": "^7.1.0",
+    "@stryker-mutator/jest-runner": "^7.1.0",
+    "@types/jest": "^29.5.0",
+    "babel": "^6.23.0",
+    "babel-jest": "^29.6.1",
+    "jest": "^29.6.1",
+    "prettier": "^2.8.7",
+    "ts-jest": "^29.1.1"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.22.9"
+  }
+}
