@@ -13,4 +13,9 @@ describe("Comparisons", () => {
         const result = isNonNegative(3);
         expect(result).toBe(true);
     });
+
+    it("-3 should be negative", () => {
+        const result = isNonNegative(-3);
+        expect(result).toBe(false);
+    });
 });
